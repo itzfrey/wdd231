@@ -89,8 +89,6 @@ function displayCourses(courseList) {
 
     // Loop through filtered courses
     courseList.forEach(course => {
-        console.log(`Rendering: ${course.subject} ${course.number}`);
-
         let card = document.createElement("section");
         card.classList.add("course-card");
 
