@@ -84,8 +84,12 @@ const courseCount = document.getElementById("course-count");
 function displayCourses(courseList) {
     coursesDiv.innerHTML = ""; // Clear container
 
-    // Show total count
-    courseCount.textContent = `The total number of courses listed below is ${courseList.length}`;
+    // Calculate total credits
+    let totalCredits = courseList.reduce((sum, course) => sum + course.credits, 0);
+
+    // Show total credits
+    courseCount.textContent = `The total credits of course listed above is ${totalCredits}`;
+
 
     // Loop through filtered courses
     courseList.forEach(course => {
