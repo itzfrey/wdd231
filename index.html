@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BYU-Idaho - WDD 231 - Course Home Page</title>
+    <meta name="description" content="Course Home Page">
+    <meta name="author" content="Godfrey Hogan Eyo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="script/navigation.js" defer></script>
+    <script src="script/course.js" defer></script>
+    <script src="script/date.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 231 - BYUI</h1>
+    <header>
+        <img src="image/home.png" alt="site logo" width="1" height="1">
+        <span>Godfrey's Home Page</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About Me</h2>
+            <p class="about">Hello! My name is Godfrey Hogan Eyo, and I am from Nigeria. I love eating, watching movies, and playing
+                games in my free time. My favorite sport is table tennis, which I enjoy both for fun and as a way to
+                stay active.
+
+                I am currently majoring in Software Development, and my dream is to become a skilled Fullstack
+                Developer. I enjoy solving problems with code, building creative projects, and learning new technologies
+                that can make life easier and more exciting.
+
+                Beyond coding, I have a strong interest in technology, innovation, and personal growth. I also value
+                teamwork, creativity, and continuous learning, as I believe they are key to success in the tech world.
+
+                One day, I hope to use my skills not just to build amazing software, but also to inspire and mentor
+                others who are passionate about technology.</p>
+        </section>
+        <section class="photo-section">
+            <h2>Student Photo</h2>
+            <div class="img-wrapper">
+                <img src="image/student-image.jpg" alt="Godfrey's Photo" loading="lazy" width="299" height="299">
+            </div>
+        </section>
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <div class="course-filters">
+                <button id="allBtn">All Courses</button>
+                <button id="cseBtn">CSE Courses</button>
+                <button id="wddBtn">WDD Courses</button>
+            </div>
+            <p id="course-count"></p>
+            <div id="courses" class="course-grid"></div>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/share/1CJKiAhdNP/" target="_blank"><img src="image/facebook.svg"
+                    alt="facebook" width="16" height="16"></a>
+            <a href="https://github.com/itzfrey" target="_blank"><img src="image/github.svg" alt="github" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com/in/godfrey-eyo-66aa3a251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium="
+                target="_blank"><img src="image/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="https://x.com/itzfrey?t=OYMBeGasE94Wpk3QaPZftA&s=09" target="_blank"><img src="image/twitter-x.svg"
+                    alt="twitter" width="16" height="16"></a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> • Godfrey Hogan Eyo • Abuja, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
+
 </html>

@@ -1,0 +1,219 @@
+/* ------------------COLOR SCHEME-------------- 
+terra cotta #E07A5F
+deep slate blue #3D4058
+*/
+
+/* -------------------------SITE WIDE----------------- */
+* {
+    font-family: "Josefin Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/************************ HEADER ************************* */
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    column-gap: 8px;
+    align-items: end;
+    padding: 5px 0 5px 10px;
+    border-bottom: solid 1px #ddd;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #3D4058;
+}
+
+/***************** HAMBURGER  ********************/
+
+.hamburger {
+    background: none;
+    border: none;
+    color: #3D4058;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/***************** NAVIGATION ********************/
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: #3D4058;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    background-color: #E07A5F;
+}
+
+
+/***************** BODY ********************/
+
+h1 {
+    margin-left: 10px;
+}
+
+section {
+    margin: 1rem 10px;
+    display: grid;
+}
+
+section h2 {
+    background-color: #3D4058;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.about {
+    background-color: #eee;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.photo-section {
+    background-color: #eee;
+}
+
+.img-wrapper {
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.photo-section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: inherit;
+}
+
+.course-filters {
+    display: flex;
+    margin: 10px 15px;
+    gap: 10px;
+}
+
+.course-filters button {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.course-filters button:hover {
+    background-color: #E07A5F;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.course-card {
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.course-card h3 {
+    font-weight: 500;
+}
+
+#course-count {
+    text-align: center;
+    margin: 15px;
+}
+
+.course-card.completed {
+    background-color: #eee;
+}
+
+.course-card.incompleted {
+
+    background-color: #E07A5F;
+}
+
+
+/***************** FOOTER ********************/
+
+footer {
+    text-align: center;
+    background-color: #eee;
+    padding: 1rem 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    margin-bottom: 10px;
+}
+
+.social a {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 22px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+
+#lastModified {
+    margin-top: 10px;
+}
