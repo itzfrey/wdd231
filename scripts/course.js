@@ -100,15 +100,12 @@ function displayCourses(courseList) {
 
 
         if (course.completed) {
-            title.innerHTML = ` &#10003 ${course.subject} ${course.number}`;
+            title.innerHTML = `&#10003 ${course.subject} ${course.number}`;
             card.classList.add("completed")
         } else {
             title.textContent = `${course.subject} ${course.number}`;
             card.classList.add("incompleted")
         }
-
-        // Subject + Number only
-        
 
         card.appendChild(title);
         coursesDiv.appendChild(card);
