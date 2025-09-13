@@ -1,0 +1,49 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+    background: #f5f5f5;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 1.5rem auto;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h1,
+h2 {
+    color: #004080;
+}
+
+ul {
+    margin-left: 1rem;
+}
+
+.design-brief p {
+    margin: 0.3rem 0;
+}
+
+footer {
+    text-align: center;
+    background: #000000;
+    color: #ffffff;
+    padding: 1rem;
+    margin-top: 2rem;
+}
