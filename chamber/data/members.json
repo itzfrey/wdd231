@@ -1,0 +1,46 @@
+[{
+        "name": "Abuja Tech Hub",
+        "address": "Plot 12, Central Business District, Abuja",
+        "phone": "(234) 701 123 4567",
+        "email": "info@abujatechhub.com",
+        "website": "https://abujatechhub.com",
+        "image": "abujatech.webp",
+        "description": "A leading innovation and startup hub supporting tech entrepreneurs in Abuja."
+    },
+    {
+        "name": "Green Market Foods",
+        "address": "Wuse Zone 5, Abuja",
+        "phone": "(234) 802 234 5678",
+        "email": "support@greenmarket.com.ng",
+        "website": "https://greenmarket.com.ng",
+        "image": "greenmarket.webp",
+        "description": "Fresh and organic food distribution company serving the FCT."
+    },
+    {
+        "name": "Royal Suites Hotel",
+        "address": "Maitama, Abuja",
+        "phone": "(234) 704 456 7890",
+        "email": "reservations@royalsuitesabuja.com",
+        "website": "https://royalsuitesabuja.com",
+        "image": "royalsuites.webp",
+        "description": "Luxury hotel providing accommodation, events, and conference facilities."
+    },
+    {
+        "name": "Sunshine Transport Ltd",
+        "address": "Jabi Motor Park, Abuja",
+        "phone": "(234) 706 678 9012",
+        "email": "info@sunshinetransport.com",
+        "website": "https://sunshinetransport.com",
+        "image": "sunshine.webp",
+        "description": "Reliable interstate and local transportation services with modern buses."
+    },
+    {
+        "name": "Abuja Fitness Center",
+        "address": "Gwarinpa Estate, Abuja",
+        "phone": "(234) 707 789 0123",
+        "email": "hello@abujafitnessng.com",
+        "website": "https://abujafitness.com",
+        "image": "fitness.webp",
+        "description": "Premium gym and wellness center with personal training and group classes."
+    }
+]

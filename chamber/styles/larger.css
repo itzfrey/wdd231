@@ -1,0 +1,85 @@
+@media only screen and (min-width: 38rem) {
+       header,
+       nav,
+       main,
+       footer {
+           max-width: 900px;
+           margin: 0 auto;
+       }
+
+       header {
+           grid-template-columns: 50px auto 24px;
+           gap: 10px;
+           padding-right: 10px;
+       }
+
+       header span {
+        font-size: 1.5rem;
+       }
+
+       .hamburger {
+           display: none;
+       }
+
+       .navigation {
+           display: block;
+       }
+
+       .navigation ul {
+           display: flex;
+           background-color: var(--primary);
+           gap: 20px;
+       }
+
+       .navigation a {
+           border-bottom: none;
+           font-size: 1.1rem;
+           color: var(--white);
+       }
+
+       .navigation a:hover {
+        background-color: var(--white);
+        color: var(--primary);
+       }
+
+       .info-panel {
+        max-width: 900px;
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+       }
+
+       .weather-info {
+        padding-right: 10px;
+       }
+
+       .list {
+           display: flex;
+           flex-direction: column;
+
+           .member-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           }
+
+           .member-body {
+            flex: 2;
+           }
+
+           
+        }
+
+       footer {
+        display: flex;
+        justify-content: space-evenly;
+       }
+
+       
+       
+     
+
+    
+        
+
+     
+}

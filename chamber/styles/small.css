@@ -1,0 +1,374 @@
+:root {
+    --primary: #004080;
+    --secondary: #FFD700;
+    --background: #F5F5F5;
+    --text: #111;
+    --white: #fff;
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Raleway", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+}
+
+/***************** HEADER  ********************/
+
+
+header {
+    display: grid;
+    grid-template-columns: 44px auto 24px 44px;
+    column-gap: 8px;
+    align-items: end;
+    padding: 5px 0 10px 10px;
+    border-bottom: solid 1px #ddd;
+    background-color: var(--background);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2rem;
+    font-family: var(--heading-font);
+    color: var(--primary);
+}
+
+.dark-mood {
+    cursor: pointer;
+}
+
+/***************** HAMBURGER  ********************/
+
+.hamburger {
+    background: none;
+    border: none;
+    /* color: var(--white); */
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/***************** NAVIGATION ********************/
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/***************** MAIN ********************/
+
+.hero {
+    width: 100%;
+    position: relative;
+
+
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.keynote-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 0.8rem 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.keynote-btn:hover{
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--primary);
+    font-family: var(--heading-font);
+}
+
+.info-panel {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.3rem;
+}
+
+.info-panel section {
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.event-heading,
+.weather-heading,
+.forecast-heading {
+    background-color: var(--primary);
+    text-align: center;
+}
+
+.event-heading h2,
+.weather-heading h2,
+.forecast-heading h2 {
+    color: var(--white);
+    padding: 10px;
+}
+
+.event-content {
+    height: 250px;
+    background-color: var(--background);
+    padding: 10px;
+}
+
+.weather-info {
+    display: flex;
+    gap: 10px;
+    line-height: 1.6;
+    background-color: var(--background);
+    padding: 10px 0px;
+    font-size: 16px;
+
+
+}
+
+.temperature {
+    font-weight: bold;
+}
+
+.forecast {
+    background-color: var(--background);
+    padding: 10px 10px;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.members h3 {
+    font-size: 1.8em;
+    margin: 25px 10px;
+}
+
+.members-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 0 10px 10px 10px;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: var(--background);
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.member-header {
+    padding: 1rem;
+    text-align: center;
+}
+
+.member-header h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: var(--primary);
+}
+
+.member-header .tagline {
+    margin: 0.25rem 0 0;
+    font-style: italic;
+    color: #555;
+}
+
+.member-card hr {
+    margin: 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+.member-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.member-logo {
+    width: 120px;
+    height: auto;
+    flex-shrink: 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.member-info {
+    flex: 1;
+
+}
+
+.member-info p {
+    margin: 0.25rem 0;
+    color: var(--text);
+    text-align: center;
+}
+
+.member-info a {
+    color: #004080;
+    text-decoration: none;
+    text-align: center;
+}
+
+.member-info a:hover {
+    text-decoration: underline;
+}
+
+.member-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.member-menu button {
+    
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--primary);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.member-menu button:hover {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+.member-menu .member-btn {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.member-menu img {
+    width: 25px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+
+    .member-card {
+        margin: 0;
+        padding: 0.25rem;
+
+        img {
+            display: none;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        &:nth-child(even) {
+            background-color: #ddd;
+        }
+
+        .tagline {
+            display: none;
+        }
+    }
+}
+
+
+/***************** FOOTER ********************/
+
+footer {
+    background-color: var(--text);
+    color: var(--white);
+    padding: 1.6rem 10px;
+    line-height: 1.6;
+}
+
+.social {
+    display: flex;
+    column-gap: 10px;
+    margin: 10px;
+    justify-content: space-evenly;
+}
+
+.social a {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 22px;
+    background-color: var(--white);
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: var(--text);
+}
