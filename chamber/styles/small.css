@@ -154,16 +154,12 @@ h3 {
     justify-content: flex-start;
 }
 
-.event-heading,
-.weather-heading,
-.forecast-heading {
+.panel-heading {
     background-color: var(--primary);
     text-align: center;
 }
 
-.event-heading h2,
-.weather-heading h2,
-.forecast-heading h2 {
+.panel-heading h2 {
     color: var(--white);
     padding: 10px;
 }
@@ -314,7 +310,7 @@ h3 {
     display: flex;
     flex-direction: column;
 }
-.list .member-card {
+.member-card .list {
     margin: 0;
     padding: 0.25rem;
 }
@@ -325,18 +321,20 @@ h3 {
 .list h3 {
     font-size: 1rem;
 }
- 
-.list .member-card:nth-child(even) {
-    background-color: #ddd;
-}
-
-.list .member-card:nth-child(even) hr {
-    border-bottom: 1px solid #ccc;
-}
 
 .list .tagline {
     display: none;
 }
+
+ 
+.members-container.list .member-card:nth-child(even) {
+    background-color: #ddd;
+}
+
+.members-container.list .member-card:nth-child(even) hr {
+    border-bottom: 1px solid #ccc;
+}
+
 
 
 

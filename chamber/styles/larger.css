@@ -56,13 +56,13 @@
            display: flex;
            flex-direction: column;
        }
-        .list .member-card {
+        .member-card .list {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .list .member-body {
+        .member-body .list {
             flex: 2;
         }
 
