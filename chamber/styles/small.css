@@ -374,3 +374,8 @@ footer {
 .social a:hover {
     background-color: var(--text);
 }
+
+footer a {
+    text-decoration: none;
+    color: #4d6aec;
+}
