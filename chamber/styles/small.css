@@ -313,28 +313,32 @@ h3 {
 .list {
     display: flex;
     flex-direction: column;
-
-    .member-card {
-        margin: 0;
-        padding: 0.25rem;
-
-        img {
-            display: none;
-        }
-
-        h3 {
-            font-size: 1rem;
-        }
-
-        &:nth-child(even) {
-            background-color: #ddd;
-        }
-
-        .tagline {
-            display: none;
-        }
-    }
 }
+.list .member-card {
+    margin: 0;
+    padding: 0.25rem;
+}
+.list img {
+    display: none;
+}
+
+.list h3 {
+    font-size: 1rem;
+}
+ 
+.list .member-card:nth-child(even) {
+    background-color: #ddd;
+}
+
+.list .member-card:nth-child(even) hr {
+    border-bottom: 1px solid #ccc;
+}
+
+.list .tagline {
+    display: none;
+}
+
+
 
 
 /***************** FOOTER ********************/

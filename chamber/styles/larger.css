@@ -55,18 +55,15 @@
        .list {
            display: flex;
            flex-direction: column;
-
-           .member-card {
+       }
+        .list .member-card {
             display: flex;
             justify-content: space-between;
             align-items: center;
-           }
+        }
 
-           .member-body {
+        .list .member-body {
             flex: 2;
-           }
-
-           
         }
 
        footer {
