@@ -89,7 +89,11 @@ header span {
 }
 
 .navigation li.current {
-    background-color: #eee;
+    background-color: var(--primary);
+}
+
+.navigation li.current a {
+    color: var(--white);
 }
 
 .navigation a:hover {
@@ -226,7 +230,7 @@ h3 {
 .member-header .tagline {
     margin: 0.25rem 0 0;
     font-style: italic;
-    color: #555;
+    color: #000;
 }
 
 .member-card hr {
@@ -377,5 +381,5 @@ footer {
 
 footer a {
     text-decoration: none;
-    color: #4d6aec;
+    color: #A3B2F5;
 }
