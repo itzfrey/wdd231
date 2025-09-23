@@ -7,7 +7,7 @@
     <title>Abuja Chamber of commerce | Directory</title>
     <meta name="description"
         content="Explore the Abuja Chamber of Commerce business directory. Find trusted local businesses and services in Abuja.">
-            <meta name="author" content="Godfrey Hogan Eyo">
+    <meta name="author" content="Godfrey Hogan Eyo">
 
     <meta property="og:title" content="Abuja Chamber of Commerce">
     <meta property="og:description"
@@ -32,6 +32,7 @@
     <script src="scripts/date.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/member.js" defer></script>
+    <script src="scripts/events.js" defer></script>
 </head>
 
 <body>
@@ -54,17 +55,17 @@
             <img src="images/cbn.webp" alt="CBN Building" width="900" height="600" loading="lazy">
             <a href="#" class="keynote-btn">Register for Expo</a>
         </div>
-        <h1>Home</h1>
+        <h1>Directory</h1>
         <div class="info-panel">
             <section class="events" id="events-section">
                 <div class="panel-heading">
                     <h2>Events</h2>
                 </div>
-
-                <div class="event-content">
-                    <p>Upcoming...</p>
+                <div class="event-content all-events">
+                    <!-- JS will inject all events here -->
                 </div>
             </section>
+
             <section>
                 <div class="panel-heading">
                     <h2>Current Weather</h2>
@@ -105,9 +106,9 @@
                         <img src="images/list-icon.svg" alt="List Selector" width="20" height="20">
                     </button>
                 </div>
-                
+
             </div>
-            
+
             <div class="members-container"></div>
         </div>
     </main>
@@ -137,7 +138,7 @@
             <p>&copy; <span id="currentyear"></span> Abuja Chamber of Commerce</p>
             <p id="lastModified"></p>
         </div>
-        
+
     </footer>
 </body>
 
