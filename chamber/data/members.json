@@ -5,7 +5,8 @@
         "email": "info@abujatechhub.com",
         "website": "https://abujatechhub.com",
         "image": "abujatech.webp",
-        "description": "A leading innovation and startup hub supporting tech entrepreneurs in Abuja."
+        "description": "A leading innovation and startup hub supporting tech entrepreneurs in Abuja.",
+        "membership": "Gold"
     },
     {
         "name": "Green Market Foods",
@@ -14,7 +15,8 @@
         "email": "support@greenmarket.com.ng",
         "website": "https://greenmarket.com.ng",
         "image": "greenmarket.webp",
-        "description": "Fresh and organic food distribution company serving the FCT."
+        "description": "Fresh and organic food distribution company serving the FCT.",
+        "membership": "Silver"
     },
     {
         "name": "Royal Suites Hotel",
@@ -23,7 +25,8 @@
         "email": "reservations@royalsuitesabuja.com",
         "website": "https://royalsuitesabuja.com",
         "image": "royalsuites.webp",
-        "description": "Luxury hotel providing accommodation, events, and conference facilities."
+        "description": "Luxury hotel providing accommodation, events, and conference facilities.",
+        "membership": "Gold"
     },
     {
         "name": "Sunshine Transport Ltd",
@@ -32,7 +35,8 @@
         "email": "info@sunshinetransport.com",
         "website": "https://sunshinetransport.com",
         "image": "sunshine.webp",
-        "description": "Reliable interstate and local transportation services with modern buses."
+        "description": "Reliable interstate and local transportation services with modern buses.",
+        "membership": "Bronze"
     },
     {
         "name": "Abuja Fitness Center",
@@ -41,6 +45,17 @@
         "email": "hello@abujafitnessng.com",
         "website": "https://abujafitness.com",
         "image": "fitness.webp",
-        "description": "Premium gym and wellness center with personal training and group classes."
+        "description": "Premium gym and wellness center with personal training and group classes.",
+        "membership": "Silver"
+    },
+    {
+        "name": "Capital Bookstore",
+        "address": "Banex Plaza, Wuse 2, Abuja",
+        "phone": "(234) 705 345 6789",
+        "email": "info@capitalbookstore.com",
+        "website": "https://capitalbookstore.com",
+        "image": "bookstore.webp",
+        "description": "Independent bookstore offering a wide range of books, stationery, and study materials.",
+        "membership": "Gold"
     }
 ]

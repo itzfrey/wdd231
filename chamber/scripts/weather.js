@@ -1,82 +1,103 @@
-// Coordinates for Abuja
-const lat = 9.05785;
-const lon = 7.49585;
+// Select HTML Elements in the Document
+const myGraphic = document.querySelector("#graphic");
+const description = document.querySelector(".description");
+const temperature = document.querySelector(".temperature");
+const high = document.querySelector(".high");
+const low = document.querySelector(".low");
+const humidity = document.querySelector(".humidity");
+const sunrise = document.querySelector(".sunrise");
+const sunset = document.querySelector(".sunset");
 
-// Open-Meteo API (3 days, Fahrenheit, includes mean temp)
-const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true&daily=temperature_2m_max,temperature_2m_min,temperature_2m_mean,sunrise,sunset,relative_humidity_2m_mean,weathercode&temperature_unit=fahrenheit&timezone=Africa/Lagos&forecast_days=3`;
+// Create Required Variable for the URL
+const mykey = "354b339e4fd788cb8dc45ea932d4ba12"
+const myLat = "9.0479285940647"
+const myLong = "7.583733066727618"
 
-async function getWeather() {
+// Construct a full path using template literals
+const myURL = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${mykey}&units=imperial`
+
+async function apiFetch() {
     try {
-        const response = await fetch(url);
-        const data = await response.json();
-
-        // ---------------- CURRENT WEATHER ----------------
-        const current = data.current_weather;
-        const temp = Math.round(current.temperature);
-        const code = current.weathercode;
-
-        const high = Math.round(data.daily.temperature_2m_max[0]);
-        const low = Math.round(data.daily.temperature_2m_min[0]);
-        const humidity = data.daily.relative_humidity_2m_mean[0];
-        const sunrise = new Date(data.daily.sunrise[0]).toLocaleTimeString([], {
-            hour: '2-digit',
-            minute: '2-digit'
-        });
-        const sunset = new Date(data.daily.sunset[0]).toLocaleTimeString([], {
-            hour: '2-digit',
-            minute: '2-digit'
-        });
-        
-
-        const weatherDescriptions = {
-            0: "Clear sky",
-            1: "Mainly clear",
-            2: "Partly cloudy",
-            3: "Overcast",
-            45: "Fog",
-            48: "Rime fog",
-            51: "Light drizzle",
-            61: "Rain showers",
-            71: "Snowfall",
-            95: "Thunderstorm"
-        };
-        const description = weatherDescriptions[code] || "Unknown";
-
-        // Update current section
-        document.querySelector('.description').textContent = description;
-        document.querySelector('.temperature').textContent = `${temp}°F`;
-        document.querySelector('.high').textContent = `High: ${high}°F`;
-        document.querySelector('.low').textContent = `Low: ${low}°F`;
-        document.querySelector('.humidity').textContent = `Humidity: ${humidity}%`;
-        document.querySelector('.sunrise').textContent = `Sunrise: ${sunrise}`;
-        document.querySelector('.sunset').textContent = `Sunset: ${sunset}`;
-
-        // ---------------- FORECAST ----------------
-        const forecastDiv = document.querySelector('.forecast');
-        forecastDiv.innerHTML = "";
-
-        for (let i = 0; i < 3; i++) {
-            let label;
-            if (i === 0) {
-                label = "Today";
-            } else {
-                label = new Date(data.daily.time[i]).toLocaleDateString([], {
-                    weekday: 'long'
-                });
-            }
-
-            const dayTemp = Math.round(data.daily.temperature_2m_mean[i]);
-
-            const card = document.createElement("div");
-            card.classList.add("forecast-day");
-            card.innerHTML = `<p>${label}: <strong>${dayTemp}°F</strong></p>`;
-            forecastDiv.appendChild(card);
+        const response = await fetch(myURL);
+        if (response.ok) {
+            const data = await response.json();
+            displayResults(data); // uncomment when ready
+        } else {
+            throw Error(await response.text());
         }
-
-    } catch (err) {
-        console.error(err);
-        document.querySelector('.description').textContent = "Weather unavailable";
+    } catch (error) {
+        console.log(error);
     }
 }
 
-getWeather();
+function displayResults(data) {
+    // Capitalize first letter of description
+    const desc = data.weather[0].description;
+    description.innerHTML = desc.charAt(0).toUpperCase() + desc.slice(1);
+
+    temperature.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
+    high.innerHTML = `High: ${Math.round(data.main.temp_max)}&deg;F`;
+    low.innerHTML = `Low: ${Math.round(data.main.temp_min)}&deg;F`;
+    humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
+
+    // Sunrise & Sunset (convert from UNIX timestamp)
+    const sunriseTime = new Date(data.sys.sunrise * 1000);
+    sunrise.innerHTML = `Sunrise: ${sunriseTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}`;
+    const sunsetTime = new Date(data.sys.sunset * 1000);
+    sunset.innerHTML = `Sunset: ${sunsetTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}`;
+
+    // Weather icon
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    myGraphic.setAttribute("src", iconsrc);
+    myGraphic.setAttribute("alt", desc);
+}
+
+const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLong}&appid=${mykey}&units=imperial`;
+
+async function getForecast() {
+    try {
+        const response = await fetch(forecastURL);
+        if (response.ok) {
+            const data = await response.json();
+            displayForecast(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (err) {
+        console.error(err);
+    }
+}
+
+function displayForecast(data) {
+    const forecastDiv = document.querySelector(".forecast");
+    forecastDiv.innerHTML = "";
+
+    // Get one forecast per day at 12:00 (midday snapshot)
+    const daily = data.list.filter(item => item.dt_txt.includes("12:00:00"));
+
+    // Only keep 3 days
+    daily.slice(0, 3).forEach(item => {
+        const date = new Date(item.dt_txt).toLocaleDateString([], {
+            weekday: "long"
+        });
+        const temp = Math.round(item.main.temp);
+
+        const card = document.createElement("div");
+        card.classList.add("forecast-day");
+        card.innerHTML = `<p>${date}: <strong>${temp}°F</strong></p>`;
+        forecastDiv.appendChild(card);
+    });
+}
+
+getForecast();
+
+
+
+apiFetch();
+
+
+
+
+
+
+
