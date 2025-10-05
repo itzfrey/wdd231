@@ -132,7 +132,7 @@ header span {
     border-radius: 8px;
 }
 
-.keynote-btn:hover{
+.keynote-btn:hover {
     background-color: var(--white);
     color: var(--primary);
 }
@@ -293,12 +293,12 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    
+
+
 }
 
 .member-menu button {
-    
+
     padding: 8px;
     border-radius: 8px;
     border: 1px solid var(--primary);
@@ -325,10 +325,12 @@ h3 {
     display: flex;
     flex-direction: column;
 }
+
 .member-card .list {
     margin: 0;
     padding: 0.25rem;
 }
+
 .list img {
     display: none;
 }
@@ -341,7 +343,7 @@ h3 {
     display: none;
 }
 
- 
+
 .members-container.list .member-card:nth-child(even) {
     background-color: #ddd;
 }
@@ -383,10 +385,11 @@ h3 {
     display: block;
 }
 
-.month, .day {
+.month,
+.day {
     font-size: 1.1rem;
     font-weight: bold;
-    
+
 }
 
 .event-details {
@@ -397,7 +400,7 @@ h3 {
     font-size: 1.1rem;
     font-weight: bold;
     margin-bottom: 5px;
-    
+
 }
 
 
@@ -430,7 +433,8 @@ h3 {
     line-height: 1.6;
 }
 
-.view-all-btn, .view-all-events {
+.view-all-btn,
+.view-all-events {
     display: block;
     margin: 1rem auto;
     text-decoration: none;
@@ -440,7 +444,7 @@ h3 {
     max-width: 200px;
     border-radius: 6px;
     font-weight: bold;
-    }
+}
 
 /*****************  DARK MODE  ********************/
 
@@ -467,7 +471,232 @@ body.dark-mode a {
     color: #4db8ff;
 }
 
+/*****************  INFO FORM  ********************/
+form {
+    margin: 1rem 10px;
+    max-width: 350px;
+}
 
+/* Label */
+form label {
+    display: block;
+    font-size: 1rem;
+    color: #000;
+    padding-top: 0.2rem;
+}
+
+/* Headings inside form */
+form h2 {
+    margin-bottom: 10px;
+}
+
+/* Inputs and selects */
+form input[type=text],
+form input[type=tel],
+form input[type=email],
+form select {
+    display: block;
+    margin: 0.1rem 0 1rem 0;
+    padding: 0.4rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #555;
+    font-size: 1rem;
+    color: #3D405B;
+    width: 250px;
+}
+
+/* Required field */
+form input:required {
+    border-left-color: #d70000;
+}
+
+/* Focus */
+form input:focus {
+    border-left-color: black;
+    outline: none;
+}
+
+/* Valid required */
+form input:required:valid {
+    border-left-color: green;
+}
+
+/* Submit button */
+form input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+/* Submit hover */
+form input[type=submit]:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+/* Textarea */
+form textarea {
+    width: 250px;
+    height: 100px;
+    display: block;
+}
+
+
+/*****************  MODAL  ********************/
+
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 1.5rem;
+    max-width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-in-out;
+    position: fixed;
+    top: 30%;
+    margin: 0 auto;
+}
+
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #444;
+    border: none;
+    background: none;
+}
+
+.cards {
+    margin: 2rem 10px;
+    display: grid;
+    gap: 1rem;
+}
+
+.cards div {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    background: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: cardFadeIn 0.8s ease-out forwards;
+}
+
+/* Animate all cards one after another */
+.cards div:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.cards div:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.cards div:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.cards div:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+/* Animation keyframes */
+@keyframes cardFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.cards div:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+dialog h2 {
+    margin-bottom: 10px;
+}
+
+
+
+.cards button {
+    padding: 8px;
+    margin-top: 10px;
+    background-color: var(--secondary);
+    color: var(--primary);
+    border: none;
+    border-radius: 10px;
+}
+
+.join-layout {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+
+/***************** THANK YOU PAGE ********************/
+
+/* Thank You Page Layout */
+.thankyou-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.thankyou-container h1 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.thankyou-container p {
+    color: var(--text);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+#submission-details {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: left;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#submission-details h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+#submission-details p {
+    margin: 0.5rem 0;
+    color: var(--text);
+}
 
 
 /***************** FOOTER ********************/

@@ -88,7 +88,7 @@ function displayCourses(courseList) {
     let totalCredits = courseList.reduce((sum, course) => sum + course.credits, 0);
 
     // Show total credits
-    courseCount.textContent = `The total credits of course listed above is ${totalCredits}`;
+    courseCount.textContent = `The total credits for the listed courses: ${totalCredits}`;
 
 
     // Loop through filtered courses
@@ -108,6 +108,9 @@ function displayCourses(courseList) {
         }
 
         card.appendChild(title);
+        card.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
         coursesDiv.appendChild(card);
     });
 }
@@ -124,6 +127,50 @@ document.getElementById("wddBtn").addEventListener("click", () => {
     const wddCourses = courses.filter(course => course.subject === "WDD");
     displayCourses(wddCourses);
 });
+
+const courseDetails = document.querySelector("#course-details")
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+    courseDetails.showModal();
+
+    const closeModal = document.getElementById('closeModal');
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+    // ✅ Close modal when clicking outside
+    courseDetails.addEventListener("click", (event) => {
+        const dialogDimensions = courseDetails.getBoundingClientRect();
+        if (
+            event.clientX < dialogDimensions.left ||
+            event.clientX > dialogDimensions.right ||
+            event.clientY < dialogDimensions.top ||
+            event.clientY > dialogDimensions.bottom
+        ) {
+            courseDetails.close();
+        }
+    });
+}
+
+
+
+
+
+
+
+
+
+
 
 // Show all courses on page load
 displayCourses(courses);

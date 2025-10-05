@@ -75,6 +75,24 @@
             flex: 2;
         }
 
+        .join-layout {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .cards {
+            margin-top: 16px;
+            width: 80%;
+        }
+
+         input[type=text],
+         input[type=tel],
+         input[type=email],
+         select {
+            width: 300px;
+         }
+
        footer {
         display: flex;
         justify-content: space-evenly;

@@ -32,6 +32,8 @@
     <script src="scripts/date.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/member.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+
 </head>
 
 <body>
@@ -50,7 +52,128 @@
         </ul>
     </nav>
     <main>
+        <!-- Membership Form -->
+        <div class="join-layout">
+            
+            <form method="get" action="thankyou.html" class="join-form">
+                <h2>Membership Application Form</h2>
+                <label>
+                    First Name:
+                    <input type="text" name="first" required title="Your First Name" autocomplete="given-name">
+                </label>
 
+                <label>
+                    Last Name:
+                    <input type="text" name="last" required title="Your Last Name" autocomplete="family-name">
+                </label>
+
+                <label>
+                    Organizational Title:
+                    <input type="text" name="orgtitle" required title="Your Position Title"
+                        autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}" placeholder="e.g., Marketing Lead">
+                </label>
+
+                <label>
+                    Email Address:
+                    <input type="email" name="email" required title="Your Email Address" autocomplete="email"
+                        placeholder="e.g., name@example.com">
+                </label>
+
+                <label>
+                    Mobile Phone:
+                    <input type="tel" name="phone" required title="Your Phone Number" autocomplete="tel">
+                </label>
+
+                <label>
+                    Organization Name:
+                    <input type="text" name="organization" required title="Business/Organization Name"
+                        autocomplete="organization">
+                </label>
+
+                <label>
+                    Membership Level:
+                    <select name="membership" title="Select Membership Level">
+                        <option value="np">Non Profit Membership (Free)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>
+                    Organization Description:
+                    <textarea name="description" title="Describe your organization"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <input type="submit" value="Join Now">
+            </form>
+
+            <!-- Membership Cards Section -->
+            <aside class="cards">
+                <h2>Membership Levels</h2>
+                <div>
+                    <h3>Non Profit Membership Level</h3>
+                    <button data-modal="modal-np">Learn More</button>
+                </div>
+                <div>
+                    <h3>Bronze Membership Level</h3>
+                    <button data-modal="modal-bronze">Learn More</button>
+                </div>
+                <div>
+                    <h3>Silver Membeship Level</h3>
+                    <button data-modal="modal-silver">Learn More</button>
+                </div>
+                <div>
+                    <h3>Gold Membership Level</h3>
+                    <button data-modal="modal-gold">Learn More</button>
+                </div>
+
+            </aside>
+        </div>
+
+        
+
+        <!-- Modals -->
+        <dialog id="modal-np" class="modal">
+            <button class="close" aria-label="Close">&times;</button>
+            <h2>Non Profit Membership Benefits</h2>
+            <ul>
+                <li>No membership fee</li>
+                <li>Access to community events</li>
+                <li>Volunteer opportunities</li>
+            </ul>
+        </dialog>
+
+        <dialog id="modal-bronze" class="modal">
+            <button class="close" aria-label="Close">&times;</button>
+            <h2>Bronze Membership Benefits</h2>
+            <ul>
+                <li>Discounted event tickets</li>
+                <li>Newsletter spotlights</li>
+            </ul>
+        </dialog>
+
+        <dialog id="modal-silver" class="modal">
+            <button class="close" aria-label="Close">&times;</button>
+            <h2>Silver Membership Benefits</h2>
+            <ul>
+                <li>Priority networking</li>
+                <li>Training workshops</li>
+                <li>Advertising discounts</li>
+            </ul>
+        </dialog>
+
+        <dialog id="modal-gold" class="modal">
+            <button class="close" aria-label="Close">&times;</button>
+            <h2>Gold Membership Benefits</h2>
+            <ul>
+                <li>All Silver benefits</li>
+                <li>Spotlight promotions</li>
+                <li>VIP event invitations</li>
+            </ul>
+        </dialog>
     </main>
     <footer>
         <div>

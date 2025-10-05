@@ -1,5 +1,3 @@
-
-
 async function loadMembers() {
     try {
         const response = await fetch("data/members.json");
@@ -84,3 +82,4 @@ function showList() {
     display.classList.add("list");
     display.classList.remove("grid");
 }
+
