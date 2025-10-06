@@ -34,6 +34,7 @@ section {
     padding: 20px;
     margin-bottom: 30px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    margin: 0 10px;
 }
 
 ul {
