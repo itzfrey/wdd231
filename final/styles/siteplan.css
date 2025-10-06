@@ -1,17 +1,16 @@
 /* ====== COLOR SCHEME ====== */
 :root {
     --primary-color: #D4AF37;
-    /* Metallic gold */
     --secondary-color: #0D0D0D;
-    /* Deep black */
     --background-color: #FDFBF7;
-    /* Soft off-white background */
     --text-color: #333333;
-    /* Neutral dark text */
+    --text-font: 'Domine', serif;
+    --heading-font: 'Montserrat', sans-serif
+    
 }
 
 body {
-    font-family: 'Domine',serif;
+    font-family: var(--text-font);
     color: var(--text-color);
     background-color: var(--background-color);
     margin: 40px auto;
@@ -19,15 +18,10 @@ body {
     line-height: 1.7;
 }
 
-h1,
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--secondary-color);
-}
 
 h1 {
     text-align: center;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     letter-spacing: 1px;
     padding-bottom: 10px;
 }
@@ -66,11 +60,10 @@ ul {
 footer {
     text-align: center;
     margin-top: 40px;
-    color: #666;
+    color: var(--secondary-color);
     font-size: 0.9rem;
 }
 
 footer span {
-    color: var(--primary-color);
     font-weight: bold;
 }
