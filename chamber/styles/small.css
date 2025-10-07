@@ -549,6 +549,7 @@ form textarea {
     width: 250px;
     height: 100px;
     display: block;
+    padding: 5px;
 }
 
 
