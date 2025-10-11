@@ -118,13 +118,3 @@
     }
 }
 
-@media only screen and (max-width: 400px) {
-      .allPlaces div {
-          grid-template-areas:
-              "name name"
-              "image image"
-              "description description"
-              "location location"
-              "cost cost";
-      }
-}
