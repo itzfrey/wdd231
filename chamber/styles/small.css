@@ -699,6 +699,66 @@ dialog h2 {
     color: var(--text);
 }
 
+/***************** DISCOVER PAGE ********************/
+
+.discover-page {
+    padding: 0 10px;
+}
+
+.allPlaces div {
+    margin: 1rem 8px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "description"
+    "image"
+    "location"
+    "cost";
+}
+
+.lead {
+    padding: 0 10px;
+}
+
+.allPlaces div h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+}
+
+.allPlaces div img {
+    width: 100%;
+    grid-area: image;
+}
+
+.allPlaces div p:first-of-type {
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+.allPlaces div p:last-of-type {
+    grid-area: cost;
+    margin: 1rem 10px;
+}
+
+.allPlaces div address {
+    margin: 1rem 10px;
+    grid-area: location;
+}
+
+.visit-message {
+    text-align: center;
+    margin: 1rem auto;
+    padding: 0.8rem 1rem;
+    background: var(--secondary);
+    color: var(--primary);
+    border-radius: 8px;
+    max-width: 500px;
+}
 
 /***************** FOOTER ********************/
 

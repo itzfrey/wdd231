@@ -32,7 +32,10 @@
     <script src="scripts/date.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/member.js" defer></script>
+    <script src="scripts/places.js" type="module"></script>
+    
 </head>
+
 <body>
     <header>
         <img src="images/commerce-icon.svg" alt="site logo" width="70" height="70">
@@ -49,7 +52,17 @@
         </ul>
     </nav>
 
-    <main>
+    <main class="discover-page">
+        <section class="intro">
+            <h1>Discover Abuja</h1>
+            <p class="lead">A concise guide to 10 notable places, cultural highlights, and practical information for
+                visitors and prospective members.</p>
+
+            <div id="visit-message" class="visit-message" role="status" aria-live="polite"></div>
+        </section>
+        <section id="allPlaces" class="allPlaces" aria-live="polite">
+            
+        </section>
 
     </main>
     <footer>
@@ -81,4 +94,5 @@
 
     </footer>
 </body>
+
 </html>
