@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Frey Kicks | Get in Touch</title>
+    <meta name="description"
+        content="Have questions or need help with your order? Contact Frey Kicks today — our support team is here to help with sneaker purchases, returns, and inquiries.">
+    <meta name="keywords"
+        content="Frey Kicks contact, customer service, sneaker support, returns, help, sneaker inquiries, order help">
+    <meta name="author" content="Godfrey Hogan Eyo">
+
+    <meta property="og:title" content="Contact Frey Kicks | Get in Touch">
+    <meta property="og:description"
+        content="Need assistance? Frey Kicks customer support is ready to help with sneaker orders, returns, and product info.">
+    <meta property="og:image" content="images/og-contact.jpg">
+    <meta property="og:url" content="https://freykicks.com/contact.html">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/frey-kicks-icon.webp" alt="site logo" width="70" height="70">
+        <span>FREY KICKS</span>
+        <button id="ham-btn" class="hamburger" aria-label="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="current"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="contact-heading">Contact Us</h1>
+
+        <section class="contact-page">
+            <section class="contact-info">
+                <h2 class="contact-title">Get in Touch</h2>
+                <p class="contact-intro">We're here to help! Whether you have questions about our Products, need
+                    assistance with
+                    an order, or just want to chat about sneakers, we'd love to hear from you.</p>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <img src="images/telephone.svg" alt="Telephone">
+                    </div>
+                    <div class="contact-details">
+                        <p class="contact-label">Phone</p>
+                        <p class="contact-value">+234(907)977-0845</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <img src="images/envelope.svg" alt="Email">
+                    </div>
+                    <div class="contact-details">
+                        <p class="contact-label">Email</p>
+                        <p class="contact-value">freykicks.ng@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <img src="images/map.svg" alt="Location">
+                    </div>
+                    <div class="contact-details">
+                        <p class="contact-label">Address</p>
+                        <p class="contact-value">Plot 106 itsekiri way, Abuja, Nigeria</p>
+                    </div>
+                </div>
+            </section>
+            <form method="post" action="thankyou.html" class="join-form" id="contactForm">
+                <h2 class="form-heading">Send a Message</h2>
+                <label>
+                    First Name:
+                    <input type="text" id="firstName" name="first" required title="Your First Name"
+                        autocomplete="given-name">
+                </label>
+
+                <label>
+                    Last Name:
+                    <input type="text" name="last" required title="Your Last Name" autocomplete="family-name">
+                </label>
+
+                <label>
+                    Email Address:
+                    <input type="email" name="email" required title="Your Email Address" autocomplete="email"
+                        placeholder="e.g., name@example.com">
+                </label>
+
+                <label>
+                    Your Message
+                    <textarea name="description" placeholder="Type your message here"
+                        title="Type your message"></textarea>
+                </label>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+
+        <div id="thankYouDialog" class="thank-you-dialog">
+            <div class="dialog-content">
+                <h2>Thank You, <span id="userName"></span>!</h2>
+                <p>Your message has been sent successfully. We’ll get back to you soon.</p>
+                <button id="closeDialog">Close</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p><strong>Frey Kicks</strong></p>
+            <p>Plot 106 itsekiri way</p>
+            <p>Karu, Abuja, Nigeria</p>
+            <p>freykicks.ng@gmail.con</p>
+            <p>(234) 907-977-0845</p>
+        </div>
+
+        <div class="social">
+            <a href="https://www.facebook.com/share/1CJKiAhdNP/" target="_blank"><img src="images/facebook.svg"
+                    alt="facebook" width="16" height="16"></a>
+            <a href="https://github.com/itzfrey" target="_blank"><img src="images/github-icon.svg" alt="github profile"
+                    width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/godfrey-eyo-66aa3a251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium="
+                target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="https://x.com/itzfrey?t=OYMBeGasE94Wpk3QaPZftA&s=09" target="_blank"><img
+                    src="images/twitter-x.svg" alt="twitter" width="16" height="16"></a>
+        </div>
+        <div>
+            <p>WDD231 Final Class Project</p>
+            <p>Godfrey Hogan Eyo</p>
+            <a target="_blank" href="siteplan.html">Site Plan</a>
+            <p>&copy; <span id="currentyear"></span> Frey Kicks</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

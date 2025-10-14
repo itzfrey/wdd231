@@ -1,0 +1,131 @@
+@media only screen and (min-width: 38rem) {
+
+    header {
+        grid-template-columns: 50px auto 24px;
+        gap: 10px;
+        padding-right: 10px;
+    }
+
+    header span {
+        font-size: 1.5rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        display: flex;
+        border-bottom: 1px solid #ddd;
+        justify-content: center;
+
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0.8rem 0;
+    }
+
+    .navigation li {
+        position: relative;
+    }
+
+
+    .navigation a {
+        border-bottom: none;
+        font-size: 1rem;
+        font-weight: 500;
+        text-decoration: none;
+        transition: color 0.3s ease, background-color 0.3s ease;
+        padding: 0.5rem 0.8rem;
+        border-radius: 5px;
+    }
+
+    .navigation a:hover {
+        background-color: var(--primary);
+
+    }
+
+    .navigation a:hover {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        transition: background-color 0.3s ease;
+    }
+
+    .contact-info {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .contact-intro {
+        font-size: 1.3rem;
+    }
+
+    form {
+        max-width: 500px;
+        margin: 3rem auto 10px;
+    }
+
+    form input[type=text],
+    form input[type=tel],
+    form input[type=email] {
+        width: 350px;
+        height: 38px;
+    }
+
+    form textarea {
+        width: 350px;
+        height: 100px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .value-item {
+        gap: 2rem;
+    }
+
+    .value-info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+    }
+
+    .values-heading {
+        grid-column: 1 / -1;
+    }
+
+    
+
+    .team-member {
+        flex-direction: row;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .team-photo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .team-info {
+        margin-top: 0;
+    }
+
+    .team-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+        gap: 2rem;
+    }
+
+}
+

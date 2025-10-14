@@ -1,0 +1,121 @@
+[{
+        "id": 1,
+        "name": "Nike Air Max 90",
+        "brand": "Nike",
+        "price": 125,
+        "image": "images/nike-airmax90.webp",
+        "description": "Classic comfort and timeless style. A true sneaker icon that never goes out of fashion."
+    },
+    {
+        "id": 2,
+        "name": "Adidas Ultraboost 22",
+        "brand": "Adidas",
+        "price": 150,
+        "image": "images/adidas-ultraboost22.webp",
+        "description": "High-performance running shoe built for energy return and all-day comfort."
+    },
+    {
+        "id": 3,
+        "name": "Air Jordan 1 Retro High OG",
+        "brand": "Jordan",
+        "price": 180,
+        "image": "images/air-jordan1.webp",
+        "description": "The original basketball classic that defined sneaker culture."
+    },
+    {
+        "id": 4,
+        "name": "Yeezy Boost 350 V2",
+        "brand": "Adidas x Yeezy",
+        "price": 220,
+        "image": "images/yeezy-boost350.webp",
+        "description": "Iconic silhouette designed by Kanye West. Lightweight and stylish."
+    },
+    {
+        "id": 5,
+        "name": "Puma RS-X³ Puzzle",
+        "brand": "Puma",
+        "price": 110,
+        "image": "images/puma-rsx3.webp",
+        "description": "Bold color-blocking and chunky style for the modern streetwear look."
+    },
+    {
+        "id": 6,
+        "name": "New Balance 550",
+        "brand": "New Balance",
+        "price": 130,
+        "image": "images/nb-550.webp",
+        "description": "Retro basketball sneaker revived from the '80s archives. Premium leather finish."
+    },
+    {
+        "id": 7,
+        "name": "Nike Dunk Low 'Panda'",
+        "brand": "Nike",
+        "price": 120,
+        "image": "images/nike-dunk-low.webp",
+        "description": "Versatile black and white colorway that goes with everything."
+    },
+    {
+        "id": 8,
+        "name": "Reebok Club C 85 Vintage",
+        "brand": "Reebok",
+        "price": 90,
+        "image": "images/reebok-clubc85.webp",
+        "description": "Minimal and timeless design. The perfect casual sneaker for everyday wear."
+    },
+    {
+        "id": 9,
+        "name": "Nike Air Force 1 '07",
+        "brand": "Nike",
+        "price": 100,
+        "image": "images/nike-af1.webp",
+        "description": "Clean, crisp and iconic. The sneaker that started it all."
+    },
+    {
+        "id": 10,
+        "name": "Converse Chuck Taylor All Star",
+        "brand": "Converse",
+        "price": 60,
+        "image": "images/converse-chuck.webp",
+        "description": "A timeless classic sneaker recognized around the world."
+    },
+    {
+        "id": 11,
+        "name": "Vans Old Skool",
+        "brand": "Vans",
+        "price": 70,
+        "image": "images/vans-oldskool.webp",
+        "description": "Skate culture meets everyday fashion in this low-top legend."
+    },
+    {
+        "id": 12,
+        "name": "Asics Gel-Lyte III",
+        "brand": "Asics",
+        "price": 110,
+        "image": "images/asics-gellyte3.webp",
+        "description": "Split-tongue design for comfort and a retro aesthetic that still stands out."
+    },
+    {
+        "id": 13,
+        "name": "Nike Air Zoom Pegasus 40",
+        "brand": "Nike",
+        "price": 130,
+        "image": "images/nike-pegasus40.webp",
+        "description": "Built for daily runs with responsive cushioning and support."
+    },
+    {
+        "id": 14,
+        "name": "Adidas Stan Smith",
+        "brand": "Adidas",
+        "price": 85,
+        "image": "images/adidas-stansmith.webp",
+        "description": "A minimalist tennis classic with sustainable materials."
+    },
+    {
+        "id": 15,
+        "name": "Jordan 4 Retro 'Thunder'",
+        "brand": "Jordan",
+        "price": 210,
+        "image": "images/jordan4-thunder.webp",
+        "description": "Premium nubuck upper with bold yellow accents for a striking finish."
+    }
+]

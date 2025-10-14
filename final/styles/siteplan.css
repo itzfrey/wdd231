@@ -24,6 +24,7 @@ h1 {
     color: var(--secondary-color);
     letter-spacing: 1px;
     padding-bottom: 10px;
+    font-family: var(--heading-font);
 }
 
 section {
