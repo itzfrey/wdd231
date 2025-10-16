@@ -78,8 +78,9 @@
    }
 
  .newsletter-input {
-    width: 500px;
-    height: 400px; 
+    
+    height: 45px !important; 
+    margin-right: 10px !important;
    }
 
    .categories-heading {

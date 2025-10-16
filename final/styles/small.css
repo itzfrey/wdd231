@@ -122,7 +122,7 @@ header span {
 /***************** HOME  ********************/
 
 .home-heading {
-    padding                                                                    : 1rem 10px;
+    padding: 1rem 10px;
     font-size: 1.8rem;
     text-align: center;
 }
@@ -167,7 +167,8 @@ header span {
     background-color: var(--primary-color);
     color: var(--background-color);
     text-align: center;
-    padding: 3rem 1rem;
+    padding: 1.5rem 1rem;
+
 }
 
 .newsletter-heading {
@@ -184,15 +185,15 @@ header span {
 }
 
 .newsletter-form {
-    display: flex;
-    justify-content: center;
     gap: 0.5rem;
     flex-wrap: wrap;
+    margin: 0 auto;
+
 }
 
 .newsletter-input {
-    flex: 1 1 250px;
-    font-size: 1rem;
+    display: inline !important;
+    
 }
 
 .newsletter-btn {
@@ -211,7 +212,7 @@ header span {
 }
 
 .thank-you {
-    
+
     font-weight: bold;
     margin-top: 1rem;
     line-height: 1.8;
@@ -278,7 +279,7 @@ header span {
 
 .about-heading {
     text-align: center;
-    padding: 1.4rem;
+    padding: 1rem;
 }
 
 .about-hero {
@@ -418,7 +419,7 @@ header span {
 
 .contact-heading {
     text-align: center;
-    margin-top: 1rem;
+    padding-top: 1rem;
 }
 
 
