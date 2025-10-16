@@ -1,0 +1,75 @@
+{
+    "sneakers": [{
+            "id": 1,
+            "name": "Nike Air Zoom Pegasus 40",
+            "brand": "Nike",
+            "price": 120,
+            "category": "Lifestyle",
+            "image": "images/lifestyle1.webp"
+        },
+        {
+            "id": 2,
+            "name": "Adidas Ultraboost 23",
+            "brand": "Adidas",
+            "price": 150,
+            "category": "Corporate",
+            "image": "images/corporate1.webp"
+        },
+        {
+            "id": 3,
+            "name": "Vans Old Skool",
+            "brand": "Vans",
+            "price": 75,
+            "category": "Classics",
+            "image": "images/classics1.webp"
+        },
+        {
+            "id": 4,
+            "name": "Nike Air Force 1 '07",
+            "brand": "Nike",
+            "price": 100,
+            "category": "Classics",
+            "image": "images/classics2.webp"
+        },
+        {
+            "id": 5,
+            "name": "Yeezy Slides",
+            "brand": "Adidas",
+            "price": 65,
+            "category": "Slides",
+            "image": "images/slides1.webp"
+        },
+        {
+            "id": 6,
+            "name": "Gucci Ace Leather Sneakers",
+            "brand": "Gucci",
+            "price": 520,
+            "category": "Corporate",
+            "image": "images/corporate1.webp"
+        },
+        {
+            "id": 7,
+            "name": "Clarks Desert Boot",
+            "brand": "Clarks",
+            "price": 130,
+            "category": "Corporate",
+            "image": "images/corporate2.webp"
+        },
+        {
+            "id": 8,
+            "name": "New Balance 574",
+            "brand": "New Balance",
+            "price": 90,
+            "category": "Lifestyle",
+            "image": "images/lifestyle1.webp"
+        },
+        {
+            "id": 9,
+            "name": "Puma Cali Dream",
+            "brand": "Puma",
+            "price": 85,
+            "category": "Lifestyle",
+            "image": "images/lifestyle2.webp"
+        }
+    ]
+}

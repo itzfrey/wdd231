@@ -1,0 +1,23 @@
+{
+    "categories": [{
+            "name": "Running",
+            "image": "images/running1.webp",
+            "description": "Engineered for speed, comfort, and peak performance."
+        },
+        {
+            "name": "Lifestyle",
+            "image": "images/running1.webp",
+            "description": "Effortless style meets all-day comfort for every outfit."
+        },
+        {
+            "name": "Classics",
+            "image": "images/running1.webp",
+            "description": "Timeless sneakers that never go out of style."
+        },
+        {
+            "name": "Corporate",
+            "image": "images/running1.webp",
+            "description": "Sophisticated footwear designed for the modern professional."
+        }
+    ]
+}

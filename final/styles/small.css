@@ -3,6 +3,7 @@
     --secondary-color: #0D0D0D;
     --background-color: #FDFBF7;
     --text-color: #333333;
+    --hover-color: #ecd071;
     --text-font: 'Domine', serif;
     --heading-font: 'Montserrat', sans-serif
 }
@@ -117,6 +118,161 @@ header span {
     background-color: var(--primary-color);
     transition: background-color 0.3s ease;
 }
+
+/***************** HOME  ********************/
+
+.home-heading {
+    padding                                                                    : 1rem 10px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+
+
+.home-hero-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.home-hero {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.home-btn {
+    font-family: var(--text-font);
+    display: block;
+    position: absolute;
+    bottom: 15%;
+    left: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--primary-color);
+    cursor: pointer;
+
+}
+
+.home-btn:hover {
+    background-color: var(--hover-color);
+}
+
+
+
+.newsletter-section {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.newsletter-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+
+}
+
+.newsletter-text {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.newsletter-input {
+    flex: 1 1 250px;
+    font-size: 1rem;
+}
+
+.newsletter-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-btn:hover {
+    background-color: var(--text-color);
+}
+
+.thank-you {
+    
+    font-weight: bold;
+    margin-top: 1rem;
+    line-height: 1.8;
+    font-family: var(--text-font);
+}
+
+
+.popular-categories {
+    padding: 2rem 1rem;
+    /* background-color: #fdfbf7; */
+    /* text-align: center; */
+}
+
+.categories-heading {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+
+}
+
+.category-card {
+    max-width: 300px;
+    /* background: #fff; */
+    border-radius: 12px;
+    /* border: 1px solid #ddd; */
+    /* padding: 1rem; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); */
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+.category-card:hover {
+    transform: translateY(-6px);
+}
+
+.category-card img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    /* max-width: 70%; */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.category-title {
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-top: 0.8rem;
+}
+
+
+
+
+
+
 
 /***************** About US PAGE ********************/
 

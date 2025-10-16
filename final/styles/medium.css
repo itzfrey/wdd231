@@ -57,6 +57,39 @@
         transition: background-color 0.3s ease;
     }
 
+    /***************** HOME  ********************/
+    .home-heading {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .home-btn {
+        width: 140px;
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+   .newsletter-heading {
+    font-size: 2rem;
+   }
+
+   .newsletter-text {
+    font-size: 1.2rem;
+   }
+
+ .newsletter-input {
+    width: 500px;
+    height: 400px; 
+   }
+
+   .categories-heading {
+    text-align: center;
+   }
+
+
+
+    /***************** CONTACT us  ********************/
+
     .contact-info {
         width: 600px;
         margin: 0 auto;
@@ -102,7 +135,7 @@
         grid-column: 1 / -1;
     }
 
-    
+
 
     .team-member {
         flex-direction: row;
@@ -128,4 +161,3 @@
     }
 
 }
-

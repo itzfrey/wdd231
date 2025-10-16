@@ -1,5 +1,10 @@
 @media only screen and (min-width: 63rem) {
 
+
+     .home-hero {
+         height: 600px;
+     }
+     
     .contact-page {
         display: grid;
         grid-template-columns: 1fr 1fr;

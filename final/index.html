@@ -15,8 +15,8 @@
     <meta property="og:title" content="Frey Kicks | Premium Sneakers & Streetwear">
     <meta property="og:description"
         content="Shop exclusive sneakers and streetwear at Frey Kicks. Discover the latest drops and limited editions.">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
+    <meta property="og:image" content="https://itzfrey.github.io/wdd231/final/images/home-hero.webp">
+    <meta property="og:url" content="https://itzfrey.github.io/wdd231/final/index.html">
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" rel="preload">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -33,6 +33,8 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/categories.js" defer></script>
+    <script src="scripts/newsletter.js" defer></script>
 
 </head>
 
@@ -51,6 +53,34 @@
         </ul>
     </nav>
     <main>
+        <h1 class="home-heading">Home</h1>
+
+        <div class="home-hero-container">
+            <img class="home-hero" src="images/home-hero.webp" alt="Frey kicks banner" width="1200" height="600">
+            <button class="home-btn" type="button">Shop Now</button>
+        </div>
+
+       <section class="popular-categories">
+           <h2 class="categories-heading">Popular Categories</h2>
+           <div id="categories-container" class="categories-grid">
+           </div>
+       </section>
+
+        <section class="newsletter-section">
+            <h3 class="newsletter-heading">Don't Miss Out</h3>
+            <p class="newsletter-text">
+                Sign up for our newsletter to get the latest arrivals, exclusive deals, and style inspiration straight
+                to
+                your inbox.
+            </p>
+
+            <form class="newsletter-form" id="newsletter-form">
+                <input type="email" name="email" placeholder="Enter your email address"
+                    style="border-left-color: white; border: 1px solid #999;" required class="newsletter-input">
+                <button type="submit" class="newsletter-btn">Subscribe</button>
+            </form>
+        </section>
+
 
     </main>
     <footer>
