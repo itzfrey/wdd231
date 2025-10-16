@@ -56,8 +56,19 @@
         <h1 class="home-heading">Home</h1>
 
         <div class="home-hero-container">
-            <img class="home-hero" src="images/home-hero.webp" alt="Frey kicks banner" width="1200" height="600">
-            <button class="home-btn" type="button">Shop Now</button>
+            <picture>
+                <!-- Large screen image -->
+                <source srcset="images/home-hero-1200.webp" media="(min-width: 1000px)">
+
+                <!-- Medium screen image -->
+                <source srcset="images/home-hero-800.webp" media="(min-width: 600px)">
+
+                <!-- Default/fallback image -->
+                <img src="images/home-hero-400.webp" alt="An image of Frey kicks home" width="500" height="600"
+                    class="home-hero" loading="lazy">
+            </picture> <button class="home-btn" type="button">Shop Now</button> <button class="home-btn"
+                type="button">Shop
+                Now</button>
         </div>
 
         <section class="popular-categories">
@@ -75,7 +86,8 @@
             </p>
 
             <form class="newsletter-form" id="newsletter-form">
-                <input type="email" name="email" placeholder="Enter your email address" required class="newsletter-input">
+                <input type="email" name="email" placeholder="Enter your email address" required
+                    class="newsletter-input">
                 <button type="submit" class="newsletter-btn">Subscribe</button>
             </form>
         </section>

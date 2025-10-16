@@ -16,7 +16,7 @@ async function loadCategories() {
             const firstSneaker = data.sneakers.find(item => item.category === category);
 
             card.innerHTML = `
-        <img src="${firstSneaker.image}" alt="${category} sneakers" loading="lazy">
+        <img src="${firstSneaker.image}" alt="${category} sneakers" loading="lazy" width="300" height="250">
         <h3 class="category-title">${category}</h3>
       `;
             categoriesContainer.appendChild(card);
